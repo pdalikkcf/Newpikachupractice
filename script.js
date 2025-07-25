@@ -1,9 +1,9 @@
 
-// Variables that students can easily understand and modify
+// Variables to modify
 let username = "Pikachu";
 let followers = 1500;
 let likes = 42;
-let isLiked = false;
+let isLiked = true;
 
 // Function to update the display with current variable values
 function updateDisplay() {
@@ -16,7 +16,7 @@ function updateDisplay() {
 function toggleLike() {
   let heart = document.getElementById("heart");
   let likeCount = document.getElementById("like-count");
-  
+
   if (isLiked) {
     // Unlike the post
     heart.textContent = "♡";
@@ -30,7 +30,7 @@ function toggleLike() {
     likes = likes + 1;
     isLiked = true;
   }
-  
+
   // Update the like count display
   likeCount.textContent = likes;
 }
