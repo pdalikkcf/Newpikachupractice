@@ -37,3 +37,12 @@ function toggleLike() {
 
 // Initialize the display when page loads
 updateDisplay();
+
+// Set initial heart state based on isLiked variable
+if (isLiked) {
+  document.getElementById("heart").textContent = "♥";
+  document.getElementById("heart").classList.add("liked");
+} else {
+  document.getElementById("heart").textContent = "♡";
+  document.getElementById("heart").classList.remove("liked");
+}
