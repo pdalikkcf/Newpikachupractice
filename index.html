@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,17 +15,38 @@
         <p id="followers">1,500 followers</p>
       </div>
     </div>
-    
+
     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu post" class="post-image">
-    
+
     <div class="actions">
       <button id="like-btn" onclick="toggleLike()">
         <span id="heart">♡</span>
         <span id="like-count">42</span> likes
       </button>
     </div>
-  </div>
 
+    <!-- NEW COMMENTS SECTION - Students will add functionality to this! -->
+    <div class="comments-section">
+      <h4>Comments</h4>
+
+      <!-- Comment input form -->
+      <div class="comment-input">
+        <input type="text" id="comment-text" placeholder="Add a comment..." maxlength="100">
+        <input type="text" id="commenter-name" placeholder="Your name" maxlength="20">
+        <button id="add-comment-btn">Post Comment</button>
+      </div>
+
+      <!-- Container where new comments will be added -->
+      <div id="comments-container">
+        <!-- Sample comment for reference. You can remove once you've finished! -->
+        <div class="comment">
+          <strong class="comment-author">Ash Ketchum</strong>
+          <span class="comment-text">My best friend! ⚡</span>
+          <button class="delete-btn">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
